@@ -1,0 +1,30 @@
+// sorry for the probably messy code. Im not that advanced yet.
+// - brecht
+
+<!DOCTYPE html>
+<style>
+    .container {
+            flex-direction: column;
+        }
+</style>
+<body>
+    <div class="container">
+        <textarea name="text" id="text", rows="30", cols="100"></textarea>
+        
+        <script>
+            const tob64 = document.createElement('button')
+            tob64.innerText = 'to b64'
+            tob64.addEventListener('click', () => {
+                text.value = atob(text.value)
+            })
+            document.body.appendChild(tob64)
+
+            const fromb64 = document.createElement('button')
+            fromb64.innerText = 'from b64'
+            fromb64.addEventListener('click', () => {
+                text.value = btoa(text.value)
+            })
+            document.body.appendChild(fromb64)
+        </script>
+    </div>
+</body>
