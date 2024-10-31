@@ -1,4 +1,4 @@
-<!-- sorry for the probably messy code. Im not that advanced yet. -->
+<!-- Sorry for the (probably) messy code. Im not that advanced yet. -->
 
 <!DOCTYPE html>
 <style>
@@ -14,14 +14,14 @@
             const encode = document.createElement('button')
             encode.innerText = 'encode'
             encode.addEventListener('click', () => {
-                text.value = atob(text.value)
+                text.value = btoa(text.value)
             })
             document.body.appendChild(encode)
 
             const decode = document.createElement('button')
             decode.innerText = 'decode'
             decode.addEventListener('click', () => {
-                text.value = btoa(text.value)
+                text.value = atob(text.value)
             })
             document.body.appendChild(decode)
         </script>
