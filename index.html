@@ -18,7 +18,7 @@
             })
             document.body.appendChild(encode)
 
-            const fromb64 = document.createElement('button')
+            const decode = document.createElement('button')
             decode.innerText = 'decode'
             decode.addEventListener('click', () => {
                 text.value = btoa(text.value)
