@@ -1,5 +1,4 @@
-// sorry for the probably messy code. Im not that advanced yet.
-// - brecht
+//sorry for the probably messy code. Im not that advanced yet.
 
 <!DOCTYPE html>
 <style>
@@ -12,19 +11,19 @@
         <textarea name="text" id="text", rows="30", cols="100"></textarea>
         
         <script>
-            const tob64 = document.createElement('button')
-            tob64.innerText = 'to b64'
-            tob64.addEventListener('click', () => {
+            const encode = document.createElement('button')
+            encode.innerText = 'encode'
+            encode.addEventListener('click', () => {
                 text.value = atob(text.value)
             })
-            document.body.appendChild(tob64)
+            document.body.appendChild(encode)
 
             const fromb64 = document.createElement('button')
-            fromb64.innerText = 'from b64'
-            fromb64.addEventListener('click', () => {
+            decode.innerText = 'decode'
+            decode.addEventListener('click', () => {
                 text.value = btoa(text.value)
             })
-            document.body.appendChild(fromb64)
+            document.body.appendChild(decode)
         </script>
     </div>
 </body>
